@@ -1,1 +1,137 @@
-Coming Soon!
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./resources/style.css" media="screen"/>
+
+<html lang="en">
+<head>
+	<title>Learning Dexterous Manipulation from Exemplar Object Trajectories and Pre-Grasps</title>
+    <link rel="icon" type="image/x-icon" href="./resources/icon.png">
+    <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
+        if you update and want to force Facebook to re-scrape. -->
+	<meta property="og:image" content="resources/teaser.png"/>
+	<meta property="og:title" content="Learning Dexterous Manipulation from Exemplar Object Trajectories and Pre-Grasps" />
+	<meta property="og:description" content="We show how simple ingredients can dramatically speed up learning dexterous behaviors." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add your Google Analytics tag here -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYQE3QXELX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BYQE3QXELX');
+    </script>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="title">
+        Learning Dexterous Manipulation from Exemplar Object Trajectories and Pre-Grasps
+    </div>
+
+    <br>
+    <br>
+
+    <div class="author">
+        <a href="https://sudeepdasari.github.io/">Sudeep Dasari</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://vikashplus.github.io/">Vikash Kumar</a><sup>2</sup>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="affiliation"><sup>1&nbsp;</sup>Carnegie Mellon University</div>
+    <div class="affiliation"><sup>2&nbsp;</sup>Meta AI Research</div>
+
+    <br>
+    <br>
+
+    <div class="links"><a href="">[arXiv]</a></div>
+    <!-- <div class="links"><a href="">[Video]</a></div> -->
+    <div class="links"><a href="https://github.com/facebookresearch/TCDM">[Code]</a></div>
+    <div class="links"><a href="">[Video]</a></div>
+    <br>
+    <br>
+    
+    <div class="teaser-left preview">
+        <a href="resources/teaser.m4v" target="_blank">
+            <video autoplay loop muted playsinline width="80%">
+                <source src="resources/teaser.m4v" type="video/mp4">
+            </video>
+        </a>
+        <br>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <h1>Abstract</h1>
+    <p>
+        Learning diverse dexterous manipulation behaviors with assorted objects remains an open grand challenge. 
+        While policy learning methods offer a powerful avenue to attack this problem, 
+        these approaches require extensive per-task engineering and algorithmic tuning. 
+        This paper seeks to escape these constraints, by developing a Pre-Grasp informed Dexterous Manipulation (PGDM) 
+        framework that generates diverse dexterous manipulation behaviors, without any task-specific reasoning or hyper-parameter tuning. 
+        At the core of PGDM is a well known robotics construct, pre-grasps (i.e. the hand-pose preparing for object interaction). 
+        This simple primitive is enough to induce efficient exploration strategies for acquiring complex dexterous manipulation behaviors. 
+        To exhaustively verify these claims, we introduce TCDM, a benchmark of 50 diverse manipulation tasks defined over multiple objects and dexterous manipulators. 
+        Tasks for TCDM are defined automatically using exemplar object trajectories from diverse sources (animators, human behaviors, etc.), without any per-task engineering and/or supervision. 
+        Our experiments validate that PGDM’s exploration strategy, induced by a surprisingly simple ingredient (single pre-grasp pose), matches the performance of prior methods, which require expensive per-task feature/reward engineering, expert supervision, and hyper-parameter tuning.
+    </p>
+
+    <br><br><hr>
+
+    <h1>Paper</h1>
+
+    <div class="paper-thumbnail">
+        <a href="">
+            <img class="layered-paper-big" width="100%" src="./resources/paper.png" alt="Paper thumbnail."/>
+        </a>
+    </div>
+    <div class="paper-info">
+        <h4>Learning Dexterous Manipulation from Exemplar Object Trajectories and Pre-Grasps</h4>
+        <h5>
+            Sudeep Dasari, Abhinav Gupta, Vikash Kumar
+        </h5>
+        <pre><code>@InProceedings{author20XXtitle,
+    title = {Creative and Descriptive Paper Title},
+    author = {Author, First and Author, Second and Author, Third and Author, Fourth and Author, Fifth},
+    booktitle = {Conference},
+    year = {20XX},
+}</code></pre>
+    </div>
+
+    <br><br><hr>
+
+    <h1>Video</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+
+    <br><br><hr>
+    <h1>Acknowledgements</h1>
+    <p>
+        This work was conducted while Sudeep Dasari was a visiting researcher at FAIR. 
+        In addition, we'd like to recognize thoughtful feedback from 
+        Shikhar Bahl, Homanga Bharadhwaj, Yufei Ye, and Sam Powers 
+        that greatly improved this paper. 
+        <a href="https://github.com/jasonyzhang/webpage-template">Website Template.</a> 
+    </p>
+
+    <br><br>
+</div>
+
+</body>
+
+</html>
