@@ -57,7 +57,7 @@
 
     <div class="links"><a href="https://arxiv.org/abs/2209.11221">[arXiv]</a></div>
     <div class="links"><a href="https://github.com/facebookresearch/TCDM">[Code]</a></div>
-    <div class="links"><a href="https://youtu.be/c_21kWdA4Ws">[Video]</a></div>
+    <div class="links"><a href="https://youtu.be/c_21kWdA4Ws">[Results Video]</a></div>
     <br>
     <br>
     
@@ -73,19 +73,52 @@
     <br><br>
     <hr>
 
-    <h1>Abstract</h1>
-    <p>
-        Learning diverse dexterous manipulation behaviors with assorted objects remains an open grand challenge. 
-        While policy learning methods offer a powerful avenue to attack this problem, 
-        these approaches require extensive per-task engineering and algorithmic tuning. 
-        This paper seeks to escape these constraints, by developing a Pre-Grasp informed Dexterous Manipulation (PGDM) 
-        framework that generates diverse dexterous manipulation behaviors, without any task-specific reasoning or hyper-parameter tuning. 
-        At the core of PGDM is a well known robotics construct, pre-grasps (i.e. the hand-pose preparing for object interaction). 
-        This simple primitive is enough to induce efficient exploration strategies for acquiring complex dexterous manipulation behaviors. 
-        To exhaustively verify these claims, we introduce TCDM, a benchmark of 50 diverse manipulation tasks defined over multiple objects and dexterous manipulators. 
-        Tasks for TCDM are defined automatically using exemplar object trajectories from diverse sources (animators, human behaviors, etc.), without any per-task engineering and/or supervision. 
-        Our experiments validate that PGDM’s exploration strategy, induced by a surprisingly simple ingredient (single pre-grasp pose), matches the performance of prior methods, which require expensive per-task feature/reward engineering, expert supervision, and hyper-parameter tuning.
+    <h1>Overview</h1>
+    <p > 
+        How can we learn diverse, dexterous manipulation behaviors <i>without</i> expensive, per-task tuning? Our work proposes two key ideas:
     </p>
+
+    <h2> <b> Introducing PGDM </b></h2>
+
+    <p >
+        Our <b>P</b>re-<b>G</b>rasp informed <b>D</b>exterous <b>M</b>anipulation (<b>PGDM</b>) framework generates diverse behaviors, without <i>any</i> hyper-parameter tuning. 
+        At the core of PGDM is a well known robotics construct, <u>pre-grasps</u> (i.e. the hand-pose preparing for object interaction). 
+        Simply moving the robot hand to a pre-grasp position before starting optimization can induce efficient exploration strategies for acquiring complex dexterous behaviors.
+    </p>
+    <br>
+    <video autoplay loop muted playsinline width="60%">
+        <source src="resources/pgdm_overview.m4v" type="video/mp4">
+    </video>
+
+    <br>
+
+    <h2><b> TCDM: Benchmarking Dexterous Manipulation at Scale </b></h2>
+
+    <p >
+        We create a <b>T</b>rajectory <b>C</b>onditioned <b>D</b>exterous <b>M</b>anipulation benchmark (<b>TCDM</b>) that contains 50 diverse manipulation tasks defined over multiple objects and robot hands. 
+        Tasks for TCDM are defined automatically using exemplar object trajectories from diverse sources (animators, human behaviors, etc.), without <i>any</i> per-task engineering or supervision. 
+    </p>    
+    <br>
+    <video autoplay loop muted playsinline width="60%">
+        <source src="resources/tcdm_overview.m4v" type="video/mp4">
+    </video>
+
+
+    <br><br><hr>
+
+    <h1>Results Video</h1>
+    <br>
+    <p > 
+        PGDM achieves a tracking error of <i>5.23e-3</i> and success rate of <i>74.5%</i>, when run on all of the 50 diverse tasks in TCDM. 
+        In addition, our baseline and ablation studies investigate our pre-grasp primitive in detail, and we even validate PGDM on real hardware. For more information check out our result video below:
+    </p>
+
+    <br> 
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/c_21kWdA4Ws" frameBorder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
 
     <br><br><hr>
 
@@ -112,17 +145,9 @@
 
     <br><br><hr>
 
-    <h1>Video</h1>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/c_21kWdA4Ws" frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
-
-    <br><br><hr>
     <h1>Acknowledgements</h1>
     <p>
-        This work was conducted while Sudeep Dasari was a visiting researcher at FAIR. 
+        This work was conducted while Sudeep Dasari was an intern at Meta AI. 
         In addition, we'd like to recognize thoughtful feedback from 
         Shikhar Bahl, Homanga Bharadhwaj, Yufei Ye, and Sam Powers 
         that greatly improved this paper. 

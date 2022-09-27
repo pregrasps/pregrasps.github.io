@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: serif;
     font-size: 20px;
 }
 
@@ -101,10 +101,13 @@ h1 {
 
 h2 {
     text-align: center;
+    font-weight: 100;
 }
 
 h4 {
     text-align: left;
+    margin: 0 auto;
+    width: 80%;
 }
 
 h5 {
@@ -163,4 +166,8 @@ a:hover {
             25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
     margin-left: 10px;
     margin-right: 45px;
+}
+
+p.shifted {
+    width: 70%;
 }
